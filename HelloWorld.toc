@@ -1,0 +1,5 @@
+## Interface: 80100     # Penser à actualiser le chiffre de l'interface
+## Titre: Bonjour le monde !
+## Mon premier AddOn
+HelloWorld.lua
+HelloWorld.xml
