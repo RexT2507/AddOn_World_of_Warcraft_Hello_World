@@ -1,9 +1,9 @@
 # La version d'interface utilisateur compatible pour ce module ( voir la dernière version de World of Warcraft )
 ## Interface: 80100 # Penser à actualiser le chiffre de l'interface
 # Le titre de l'addon à afficher dans le jeu
-## Titre: Bonjour le monde !
+## Title: Bonjour le monde !
 # La description de l'addon à afficher dans le jeu
-## Mon premier AddOn
+## Notes: Mon premier AddOn
 # Les fichiers chargés au démarrage de l'addon
 HelloWorld.lua
 HelloWorld.xml
