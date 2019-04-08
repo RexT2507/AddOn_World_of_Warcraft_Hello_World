@@ -1,0 +1,35 @@
+<!--
+    ############################################################################################
+    #                           Commentaires d'explication du fichier XML                      #
+    #                             DEV effectué par RexT  le 05/04/2019                         #
+    ############################################################################################
+
+     Ui est la balise pour "interface utilisateur" 
+
+     xmlns="http://www.blizzard.com/wow/ui/" Défini namespace cela permet d'assurer que dans mon 
+            document la balise ui est bien défini par  Blizzard et pas par moi.
+
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Références vers des schémas W3C XML Schema
+            décrivant des namespace, son contenu est une suite de valeurs.
+-->
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\..\FrameXML\UI.xsd">
+    <!-- On indique au moteur WoW où trouver notre fonction dans notre fichier .lua -->
+    <Script File="HelloWorld.lua"/>
+    <!-- WoW connecte tout à un cadre, donc afin de créer quelque chose avec WoW va intéragir, nous créons un cadre -->
+    <Frame name="HelloWorldFrame">
+        <!-- Les scripts s'executent dans un cadre on inclut la balise "Scripts" dans la balise "Frame" -->
+        <Scripts>
+            <!-- On utilise l'évènement OnLoad, il se produit lorsque le widget est chargé dans l'interface utilisateur -->
+            <OnLoad>
+                <!-- On execute notre script qui est défini dans HelloWorld.lua -->
+                HelloWorld();
+            </OnLoad>
+
+        </Scripts>
+
+    </Frame>
+
+</Ui>
+
+
